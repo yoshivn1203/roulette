@@ -187,7 +187,7 @@ const Home = () => {
               onClick={handleAddOption}
               disabled={mustSpin}
             >
-              Thêm lựa chọn
+              <i className='fas fa-plus'></i>
             </button>
           </div>
 
@@ -202,7 +202,7 @@ const Home = () => {
                     onClick={() => handleRemoveOption(index)}
                     disabled={mustSpin}
                   >
-                    Xóa
+                    <i className='fas fa-trash'></i>
                   </button>
                 </li>
               ))}
