@@ -139,18 +139,30 @@ const Home = () => {
               <Wheel
                 mustStartSpinning={mustSpin}
                 prizeNumber={prizeNumber}
+                spinDuration={[1]}
                 data={data}
+                outerBorderColor={['#ccc']}
+                outerBorderWidth={[9]}
+                innerBorderColor={['#f2f2f2']}
+                radiusLineColor={['tranparent']}
+                radiusLineWidth={[1]}
+                textColors={['#f5f5f5']}
+                textDistance={55}
+                fontSize={[14]}
                 backgroundColors={[
-                  '#1976D2', // Bright Blue
-                  '#673AB7', // Deep Purple
-                  '#00BCD4', // Cyan
-                  '#3F51B5', // Indigo
-                  '#006064', // Dark Cyan
-                  '#9C27B0', // Purple
-                  '#01579B', // Dark Blue
-                  '#4A148C' // Deep Purple
+                  '#3f297e',
+                  '#175fa9',
+                  '#169ed8',
+                  '#239b63',
+                  '#64b031',
+                  '#efe61f',
+                  '#f7a416',
+                  '#e6471d',
+                  '#dc0936',
+                  '#e5177b',
+                  '#be1180',
+                  '#871f7f'
                 ]}
-                textColors={['#ffffff']} // White text for all segments
                 onStopSpinning={() => {
                   setMustSpin(false);
                   setShowWinnerModal(true);
